@@ -1,0 +1,28 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ---- 数据：原始光谱默认不入库 ----
+data/
+!data/.gitkeep
+*.csv
+*.xlsx
+raw/
+
+# ---- 训练产物 ----
+results/
+*.pth
+*.pt
+runs/
+logs/
+
+# ---- 编辑器 / 系统 ----
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

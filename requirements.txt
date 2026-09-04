@@ -1,0 +1,19 @@
+# 核心依赖（全部为宽松许可证：BSD / MIT / Apache-2.0）
+python>=3.8
+numpy>=1.21
+scipy>=1.7
+pandas>=1.3
+scikit-learn>=1.0
+matplotlib>=3.4
+
+# 基线校正：airPLS / ALS，BSD-3-Clause
+pybaselines>=1.0
+
+# 图神经网络（torch: BSD-3-Clause，torch-geometric: MIT）
+# 建议按官方指引安装与本机 torch/CUDA 版本匹配的 torch-geometric：
+#   https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html
+torch>=1.12
+torch-geometric>=2.0,<2.4   # 本仓库使用 PyG 2.x 的 GNNExplainer API
+
+# 可选（--task xgboost 时需要，Apache-2.0）
+xgboost>=1.6
